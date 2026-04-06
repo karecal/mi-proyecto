@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Circle Agency – Contact</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="stylesheet" href="../css/modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="../assets/logos/favicon.ico" type="image/x-icon">
+  <script defer src="../js/contact.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+        <i class="fa fa-bars burger"></i>
+      </label>
+      <a class="logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
+      <input type="checkbox" id="chkToggle">
+      <ul class="main-nav" id="js-menu">
+        <li><a class="nav-links" href="/">Home</a></li>
+        <li><a class="nav-links" href="/#projects">Projects</a></li>
+        <li><a class="nav-links" href="/#services">Services</a></li>
+      </ul>
+      <a class="btn capitalize" href="/pages/contact" id="menuBtn">Contact us</a>
+    </nav>
+  </header>
+
+  <!-- Contact Form -->
+  <main>
+    <form id="form-container" class="formClass">
+      <h1>Contact Us</h1>
+
+      <div class="nameDiv">
+        <label for="name">Full Name</label>
+        <input type="text" placeholder="Enter your full name" name="name" id="name" required onblur="validateName()">
+        <p id="errorName" class="errorForm" hidden>Please, complete the field NAME with your name</p>
+      </div>
+
+      <div class="emailAndPhone">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email address" required onblur="validateEmail()">
+          <p id="errorEmail" class="errorForm" hidden>Please, complete the field EMAIL</p>
+          <p id="errorFormatEmail" class="errorForm" hidden>Invalid email</p>
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" placeholder="Enter your phone number" required onblur="validatePhone()">
+          <p id="errorPhone" class="errorForm" hidden>Please enter your phone number</p>
+        </div>
+      </div>
+
+      <div class="messageDiv">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message here..." required onblur="validateMessage()"></textarea>
+        <p id="errorMessageUser" class="errorForm" hidden>Write us at least 5 characters</p>
+      </div>
+
+      <div class="buttonSubmit">
+        <button type="button" id="submitForm" onclick="sendForm()">Submit</button>
+        <p id="errorSubmit" class="errorForm" hidden>PLEASE, REVIEW THE REQUIRED FIELDS</p>
+      </div>
+    </form>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-button">x</span>
+      <p class="modal-title">Circle Agency</p>
+      <h4>Thank you! Your form has been sent successfully!!</h4>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="address-info">
+      <a class="address-info-logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
+      <p>2972 Westheimer Rd. Santa Ana,<br>Illinois 85486</p>
+    </div>
+    <ul class="sitemap">
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Press</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+  </footer>
+
+  <script src="../js/modal.js"></script>
+</body>
+</html>
