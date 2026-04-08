@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Circle Agency – Project</title>
-  <link rel="stylesheet" href="../css/global.css">
-  <link rel="stylesheet" href="../css/projects.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="../assets/logos/favicon.ico" type="image/x-icon">
-  <script defer src="../js/projects.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle Agency – Project</title>
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+    <link rel="shortcut icon" href="../assets/logos/favicon.ico" type="image/x-icon">
+    <script defer src="../js/projects.js"></script>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-        <i class="fa fa-bars burger"></i>
-      </label>
-      <a class="logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
-      <input type="checkbox" id="chkToggle">
-      <ul class="main-nav" id="js-menu">
-        <li><a class="nav-links" href="/">Home</a></li>
-        <li><a class="nav-links" href="/#projects">Projects</a></li>
-        <li><a class="nav-links" href="/#services">Services</a></li>
-      </ul>
-      <a class="btn capitalize" href="/pages/contact" id="menuBtn">Contact us</a>
-    </nav>
-  </header>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar container">
+            <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                <i class="fa fa-bars burger"></i>
+            </label>
+            <a class="logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
 
-  <!-- Project Section -->
-  <section id="project">
-    <h1 class="title"></h1>
-    <div class="subtitle">
-      <span class="UI-design-title"></span>
-      <span class="completed-title">Completed on <span class="completed-title-data"></span></span>
-    </div>
-    <div class="project-image-section">
-      <img class="project-image" src="" alt="Project image">
-    </div>
-    <article class="project-description"></article>
-  </section>
+            <ul class="main-nav" id="js-menu">
+                <li><a class="nav-links" href="/">Home</a></li>
+                <li><a class="nav-links" href="/#projects">Projects</a></li>
+                <li><a class="nav-links" href="/#services">Services</a></li>
+            </ul>
+            <a class="btn capitalize" href="/pages/contact" id="menuBtn">Contact us</a>
+        </nav>
+    </header>
 
-  <!-- Other Projects -->
-  <section class="recent-projects">
-    <h2 class="capitalize">Other projects</h2>
-    <div class="projects-container" id="other-projects">
-      <!-- JS injecta aquí los otros proyectos -->
-    </div>
-  </section>
+    <!-- Project Section -->
+    <section id="project">
+        <h1 class="title"></h1>
+        <div class="subtitle">
+            <span class="UI-design-title"></span>
+            <span class="completed-title">Completed on <span class="completed-title-data"></span></span>
+        </div>
+        <div class="project-image-section">
+            <img class="project-image" src="" alt="Project image">
+        </div>
+        <article class="project-description"></article>
+    </section>
 
-  <!-- Newsletter -->
-  <section class="newsletter">
-    <h2>Do you have any questions?</h2>
-    <h3>Let us help you!</h3>
-    <form>
-      <input id="email" name="email" type="email" placeholder="Enter your email">
-      <a class="newsletter-suscribe" href="/pages/contact">
-        <input type="button" value="Subscribe">
-      </a>
-    </form>
-  </section>
+    <!-- Other Projects -->
+    <section class="recent-projects">
+        <h2>Other Projects</h2>
+        <div class="projects-container" id="other-projects">
+            <!-- JS injecta aquí los otros proyectos -->
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="address-info">
-      <a class="address-info-logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
-      <p>
-        2972 Westheimer Rd. Santa Ana,<br>Illinois 85486
-      </p>
-    </div>
-    <ul class="sitemap">
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Press</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
-  </footer>
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Do you have any questions?</h2>
+        <h3>Let us help you!</h3>
+        <form>
+            <input id="email" name="email" type="email" placeholder="Enter your email">
+            <a class="newsletter-suscribe" href="/pages/contact">
+                <input type="button" value="Subscribe">
+            </a>
+        </form>
+    </section>
 
-  <!-- Modal de error -->
-  <div class="modal" id="modal">
-    <div class="modal-content">
-      <span class="close-button">x</span>
-      <p class="modal-title">Circle Agency</p>
-      <h4>Oops, something went wrong. 😬</h4>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="address-info">
+            <a class="address-info-logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
+            <p>
+                2972 Westheimer Rd. Santa Ana,<br>Illinois 85486
+            </p>
+        </div>
+        <ul class="sitemap">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
+
+    <!-- Modal de error -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button">x</span>
+            <p class="modal-title">Circle Agency</p>
+            <h4>Oops, something went wrong. 😬</h4>
+        </div>
     </div>
-  </div>
 
 </body>
+
 </html>

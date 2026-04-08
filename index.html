@@ -10,51 +10,54 @@
 
 <body>
 
-<!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-        <i class="fa fa-bars burger"></i>
-      </label>
-      <a class="logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
-      <input type="checkbox" id="chkToggle">
-      <ul class="main-nav" id="js-menu">
-        <li><a class="nav-links" href="/">Home</a></li>
-        <li><a class="nav-links" href="/#projects">Projects</a></li>
-        <li><a class="nav-links" href="/#services">Services</a></li>
-      </ul>
-      <a class="btn capitalize" href="/pages/contact" id="menuBtn">Contact us</a>
-    </nav>
-  </header>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar container">
+            <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                <i class="fa fa-bars burger"></i>
+            </label>
+            <a class="logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
+            <ul class="main-nav" id="js-menu">
+                <li><a class="nav-links" href="/">Home</a></li>
+                <li><a class="nav-links" href="/#projects">Projects</a></li>
+                <li><a class="nav-links" href="/#services">Services</a></li>
+            </ul>
+            <a class="btn capitalize" href="/pages/contact" id="menuBtn">Contact us</a>
+        </nav>
+    </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero-section">
+    <!-- Hero section -->
+    <section class="hero-section container">
         <div class="hero-content">
             <h1>Empower Your Business With Stunning Design!</h1>
-            <h3>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</h3>
-        </div>
-        <div class="hero-content-buttons">
+            <h3>Circle is a digital design and development studio. We design and develop astonishing websites and mobile
+                apps.</h3>
+                <div class="hero-content-buttons">
             <a class="btn" href="#newsletter">Get in touch</a>
             <a href="#projects">See our work</a>
         </div>
+        </div>
+        
         <div class="hero-images">
-            <img src="assets/hero.png" alt="Hero Image">
-            <img src="assets/card-1.png" alt="Choose your credit card">
-            <img src="assets/card-2.png" alt="Project accepted card">
+            <img src="../assets/hero-section/hero-image.png" alt="Hero Image">
+            <img src="../assets/hero-section/card-1.png" alt="Choose your credit card">
+            <img src="../assets/hero-section/card-2.png" alt="Project accepted card">
         </div>
     </section>
 
-    <!-- CLIENTS SECTION -->
-    <section class="clients">
+    <!-- Clients section -->
+    <section class="clients container">
+        
         <a href="https://www.airbnb.com" target="_blank"><img src="assets/logos/airbnb-logo.svg" alt="Airbnb"></a>
         <a href="https://www.google.com" target="_blank"><img src="assets/logos/google-logo.svg" alt="Google"></a>
-        <a href="https://www.microsoft.com" target="_blank"><img src="assets/logos/microsoft-logo.svg" alt="Microsoft"></a>
+        <a href="https://www.microsoft.com" target="_blank"><img src="assets/logos/microsoft-logo.svg"
+                alt="Microsoft"></a>
         <a href="https://www.fedex.com" target="_blank"><img src="assets/logos/fedex-logo.svg" alt="FedEx"></a>
         <a href="https://www.amazon.com" target="_blank"><img src="assets/logos/amazon-logo.svg" alt="Amazon"></a>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="recent-projects">
+    <!-- Projects section -->
+    <section id="projects" class="recent-projects container">
         <h2>Recent Projects</h2>
         <div class="projects-container">
             <article class="project-card">
@@ -81,8 +84,9 @@
         </div>
     </section>
 
-<!--TESTIMONIAL-->
-<section class="testimonial">
+    <!--Testimonial-->
+    <section class="testimonial">
+        <div class="container">
         <div class="testimonial-memojis">
             <img class="testimonial-memoji1" src="./assets/testimonial-section/memoji-1.png" alt="Memoji 1">
             <img class="testimonial-memoji2" src="./assets/testimonial-section/memoji-2.png" alt="Memoji 2">
@@ -98,17 +102,19 @@
             </p>
         </div>
         <div class="testimonial-profile">
-            <img class="testimonial-profile-img" src="./assets/testimonial-section/profile.png" alt="Kristin Watson profile image">
+            <img class="testimonial-profile-img" src="./assets/testimonial-section/profile.png"
+                alt="Kristin Watson profile image">
             <div class="testimonial-profile-info">
                 <p class="name">Kristin Watson</p>
                 <p class="origin">Booking.com</p>
             </div>
         </div>
+        </div>
     </section>
 
-    <!-- SERVICES -->
+    <!-- Services -->
 
-    <section id="services" class="services">
+    <section id="services" class="services container">
         <h2>Our Services</h2>
         <div class="services-container">
             <article class="services-card">
@@ -138,40 +144,46 @@
         </div>
     </section>
 
-<!-- NEWSLETTER -->
+    <!-- Newsletter -->
+    <newsletter-component id="newsletter">
+        <section class="newsletter">
+            <div class="container">
+            <h2>Do you have any questions?</h2>
+            <h3>Let us help you!</h3>
+            <form action="">
+  <div class="input-wrapper">
+    <img src="./assets/newsletter/icon/mail.svg" alt="mail icon">
+    <input id="email" name="email" type="email" placeholder="Enter your email">
+  </div>
 
-<newsletter-component id="newsletter">
-    <section class="newsletter">
-    <h2>Do you have any questions?</h2>
-    <h3>Let us help you!</h3>
-    <form action="">
-        <input id="email" name="email" type="email" placeholder="Enter your email">
-        <a class="newsletter-suscribe" href="/pages/contact">
-            <input type="button" value="Suscribe">
-        </a>
-    </form>
-</section></newsletter-component>
+  <a href="/pages/contact" class="btn newsletter-btn">
+    Subscribe
+  </a>
+</form>
+            </div>
+        </section>
+    </newsletter-component>
 
-<!-- FOOTER -->
-
-<footer class="footer">
-    <div class="address-info">
-      <a class="address-info-logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
-      <p>
-        2972 Westheimer Rd. Santa Ana,<br>Illinois 85486
-      </p>
-    </div>
-    <ul class="sitemap">
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Press</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Privacy Policy</a></li>
-    </ul>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer container">
+        <div class="address-info">
+            <a class="address-info-logo" href="/"><img src="../assets/logos/circle.svg" alt="Circle Logo"></a>
+            <p>
+                2972 Westheimer Rd. Santa Ana,<br>Illinois 85486
+            </p>
+        </div>
+        <ul class="sitemap">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </footer>
 
     <script src="js/main.js"></script>
 
 </body>
+
 </html>
