@@ -29,6 +29,7 @@ span.caption-13 { font-size: 13px; font-weight: 400; color: var(--text-gray); }
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #F2F4FC;
   
 }
 
@@ -666,7 +667,7 @@ textarea {
   width: 100%;
   padding: 18px;
   margin-top: 10px;
-  border: none; /* 👈 sin borde */
+  border: none;
   background-color: #ECECF3; /* 👈 gris claro */
   border-radius: 0;
   font-size: 15px;
